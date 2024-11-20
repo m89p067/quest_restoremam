@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quest3_EORTC</title>
+    <style>
+        .slider-container {
+            margin-bottom: 20px;
+        }
+        .slider-label {
+            display: inline-block;
+            width: 50px;
+        }
+        .slider-wrapper {
+            display: flex;
+            align-items: center;
+        }
+        .slider {
+            flex-grow: 1;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<h1>EORTC</h1>
+<h2>Per le seguenti domande muova la barra verso il punto che meglio corrisponde alla Sua risposta:</h2>
+<br>
+    <form>
+  
+        <p>Come valuterebbe in generale la Sua salute durante gli ultimi sette giorni?</p>
+		<div class="slider-container">
+        <div class="slider-wrapper">
+            <label for="slider1" class="slider-label">Pessima</label>
+            <input type="range" id="slider1" class="slider" min="1" max="7" value="5" oninput="updateValues()">
+            <label for="slider1" class="slider-label">Ottima</label>
+        </div>
+    </div>
+<p>Come valuterebbe in generale la Sua qualità di vita durante gli ultimi sette giorni?</p>
+    <div class="slider-container">
+        <div class="slider-wrapper">
+            <label for="slider2" class="slider-label">Pessima</label>
+            <input type="range" id="slider2" class="slider" min="1" max="7" value="5" oninput="updateValues()">
+            <label for="slider2" class="slider-label">Ottima</label>
+        </div>
+    </div>
+
+    <h3>Valori selezionati:</h3>
+    <p>Quantificazione livello salute (ultimi sette giorni): <span id="display-slider1-value">5</span></p>
+    <p>Quantificazione livello qualità di vita (ultimi sette giorni): <span id="display-slider2-value">5</span></p>
+
+    <script>
+        function updateValues() {
+            var slider1 = document.getElementById('slider1').value;
+            var slider2 = document.getElementById('slider2').value;
+
+            document.getElementById('display-slider1-value').textContent = slider1;
+            document.getElementById('display-slider2-value').textContent = slider2;
+        }
+    </script>	 
+    </form><br><br>
+<button onclick="loadNewPage()">Avanti</button>
+    <script>
+   	
+		function loadNewPage() 
+				{ window.location.href = '../index2.html'; 
+				// The "./" indicates the same local folder 
+				} 
+    </script>
+</body>
+</html>
