@@ -3,6 +3,10 @@
   
   <head>
       <title>Quest1_PART9</title>
+	  <style> 
+	  .form-group { display: flex; align-items: center; margin-bottom: 1rem; } 
+	  .form-group label { margin-right: 10px; } .form-group select { margin-right: 10px; } 
+	  </style>
   </head>
   
   <body>
@@ -10,7 +14,93 @@
       <h1>Caratteristiche cliniche </h1>
 
      <h2>Esito valutazioni</h2>
-
+<form> 
+<div class="form-group"> 
+<label for="selection">Inizio trattamento o data chirurgia cancro al seno:</label> 
+<select id="first-dropdown" name="first-dropdown" required> 
+<option value="">Select an option</option> 
+<option value="option1">Gennaio</option> 
+<option value="option2">Febbraio</option> 
+<option value="option3">Marzo</option> 
+<option value="option4">Aprile</option> 
+<option value="option5">Maggio</option> 
+<option value="option6">Giugno</option> 
+<option value="option7">Luglio</option> 
+<option value="option8">Agosto</option> 
+<option value="option9">Settembre</option> 
+<option value="option10">Ottobre</option> 
+<option value="option11">Novembre</option> 
+<option value="option12">Dicembre</option> 
+</select> 
+<select id="second-dropdown" name="second-dropdown" required> 
+<option value="">Select an option</option>
+<option value="optionX">2025</option>  
+<option value="optionA">2024</option> 
+<option value="optionB">2023</option> 
+<option value="optionC">2022</option> 
+<option value="optionD">2021</option> 
+<option value="optionE">2020</option> 
+<option value="optionF">2019</option>
+<option value="optionG">2018</option> 
+<option value="optionH">2017</option> 
+<option value="optionI">2016</option>
+<option value="optionL">2015</option> 
+<option value="optionM">2014</option> 
+<option value="optionN">2013</option>
+<option value="optionO">2012</option> 
+<option value="optionP">2011</option> 
+<option value="optionQ">2010</option>
+<option value="optionR">2009</option> 
+<option value="optionS">2008</option> 
+<option value="optionT">2007</option>
+<option value="optionU">2006</option> 
+<option value="optionV">2005</option> 
+<option value="optionZ">2004</option>
+</select> 
+</div>
+<div class="form-group"> 
+<label for="selection">Data diagnosi di linfedema:</label> 
+<select id="first-dropdown" name="first-dropdown" required> 
+<option value="">Select an option</option> 
+<option value="option11">Gennaio</option> 
+<option value="option21">Febbraio</option> 
+<option value="option31">Marzo</option> 
+<option value="option41">Aprile</option> 
+<option value="option51">Maggio</option> 
+<option value="option61">Giugno</option> 
+<option value="option71">Luglio</option> 
+<option value="option81">Agosto</option> 
+<option value="option91">Settembre</option> 
+<option value="option101">Ottobre</option> 
+<option value="option111">Novembre</option> 
+<option value="option121">Dicembre</option> 
+</select> 
+<select id="second-dropdown" name="second-dropdown" required> 
+<option value="">Select an option</option>
+<option value="optionX1">2025</option>  
+<option value="optionA1">2024</option> 
+<option value="optionB1">2023</option> 
+<option value="optionC1">2022</option> 
+<option value="optionD1">2021</option> 
+<option value="optionE1">2020</option> 
+<option value="optionF1">2019</option>
+<option value="optionG1">2018</option> 
+<option value="optionH1">2017</option> 
+<option value="optionI1">2016</option>
+<option value="optionL1">2015</option> 
+<option value="optionM1">2014</option> 
+<option value="optionN1">2013</option>
+<option value="optionO1">2012</option> 
+<option value="optionP1">2011</option> 
+<option value="optionQ1">2010</option>
+<option value="optionR1">2009</option> 
+<option value="optionS1">2008</option> 
+<option value="optionT1">2007</option>
+<option value="optionU1">2006</option> 
+<option value="optionV1">2005</option> 
+<option value="optionZ1">2004</option>
+</select> 
+</div>
  <div class="slider-container"> 
     Performance Status secondo Karnofsky:<input type="range" id="KPSSlider" class="slider" min="0" max="100" value="20" 
     oninput="updateValue1(this.value)">  <span class="value" id="KPS">20</span></div>     
@@ -112,11 +202,14 @@
 <label><input type="radio" name="option" value="3"> Moderatamente</label> 
 <label><input type="radio" name="option" value="4"> Completamente</label> 
    </div>
+   </form>
 <br><br>
 <button onclick="loadNewPage()">Avanti</button> 
 <script> function loadNewPage() { window.location.href = '../index2.html'; 
-// Replace 'newpage.html' with the path to your new HTML file 
-} </script>
+// Replace 'newpage.html' with the path to your new HTML file
+
+
+ </script>
   </body>
   
   </html>
