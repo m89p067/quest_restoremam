@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html>
+  
+  <head>
+      <title>QuickDASH</title>
+	  
+	   <style>  
+	    .slider-container {
+            display: flex;
+            align-items: center;
+            margin: 20px;
+        }
+        .slider-label {
+            width: 50px;
+            text-align: center;
+        }
+        .slider {
+            width: 300px;
+            margin: 0 10px;
+        }
+        .ticks {
+            display: flex;
+            justify-content: space-between;
+        }
+	</style>
+	
+  </head>
+  
+  <body>
+  
+      <h1>Questionario per l’arto superiore QuickDASH</h1>
+
+     <h2>(Disability of the Arm, Shoulder and Hand) Italian Version</h2>
+<br>
+<form>
+        <p>Scala NRS (Numerical Rating Scale) riguardo l'ultima settimana</p>
+        <div class="slider-container">
+            <div class="slider-label">Nessun dolore</div>
+            <input type="range" min="0" max="10" value="5" class="slider" id="slider1" step="1" oninput="updateValue1(this.value)">
+            <div class="slider-label">Massimo dolore provato</div></div>
+			<br><br>
+			<div>Livello dolore selezionato:<span class="value" id="Dolore">5</span></div>     
+    <script> function updateValue1(value) { document.getElementById("Dolore").innerText = value; }
+     </script>
+        
+       
+
+        
+    </form>
+<br><br>
+<button onclick="loadNewPage()">Avanti</button> 
+<script> function loadNewPage() { window.location.href = '../index2.html'; 
+// Replace 'newpage.html' with the path to your new HTML file 
+} </script>
+  </body>
+  
+  </html>
