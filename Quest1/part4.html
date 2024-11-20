@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+ <html> <head> 
+    <title>Quest1_PART4</title> 
+   <style>  body { font-family: Arial, sans-serif; margin: 20px; } 
+	.question { margin-bottom: 20px; }
+.colored-box { width: 300px; height: 100px; background-color: #4CAF50; /* Green background color */ color: white; /* White text color */ border: 2px solid #000; /* Black border */ padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; display: flex; align-items: center; justify-content: center; }
+	</style>
+     </head>
+  
+  <body>
+  
+      <h1>Principali comorbilità (CIRS)</h1>
+
+     <h2>Quarta parte</h2>
+      <div class="colored-box"> Istruzioni: 1=Assente; 2=Lieve; 3=Moderato; 4=Grave; 5=Molto grave. </div>
+  <form>
+  <div class="question"> 
+        <p>10. Patologie genito-urinarie (ureteri, vescica, uretra, prostata, genitali)?</p> 
+        <input type="radio" id="GenitoUrin-1" name="GenitoUrin" value="1">
+        <label for="GenitoUrin-1">Assente</label><br> 
+        <input type="radio" id="GenitoUrin-2" name="GenitoUrin" value="2"> 
+        <label for="GenitoUrin-2">Lieve</label><br> 
+        <input type="radio" id="GenitoUrin-3" name="GenitoUrin" value="3"> 
+        <label for="GenitoUrin-3">Moderato</label><br> 
+        <input type="radio" id="GenitoUrin-4" name="GenitoUrin" value="4"> 
+        <label for="GenitoUrin-4">Grave</label> <br>
+        <input type="radio" id="GenitoUrin-5" name="GenitoUrin" value="5"> 
+        <label for="GenitoUrin-5">Molto grave</label> 
+        </div> 
+  
+  <div class="question"> 
+        <p>11. Sistema muscolo-scheletro-cute (muscoli, scheletro, tegumenti)?</p> 
+        <input type="radio" id="MuscSchel-1" name="MuscSchel" value="1">
+        <label for="MuscSchel-1">Assente</label><br> 
+        <input type="radio" id="MuscSchel-2" name="MuscSchel" value="2"> 
+        <label for="MuscSchel-2">Lieve</label><br> 
+        <input type="radio" id="MuscSchel-3" name="MuscSchel" value="3"> 
+        <label for="MuscSchel-3">Moderato</label><br> 
+        <input type="radio" id="MuscSchel-4" name="MuscSchel" value="4"> 
+        <label for="MuscSchel-4">Grave</label> <br>
+        <input type="radio" id="MuscSchel-5" name="MuscSchel" value="5"> 
+        <label for="MuscSchel-5">Molto grave</label> 
+        </div> 
+   <div class="question"> 
+        <p>12. Patologie sistema nervoso (sistema nervoso centrale e periferico; non include la demenza)?</p> 
+        <input type="radio" id="SistNerv-1" name="SistNerv" value="1">
+        <label for="SistNerv-1">Assente</label><br> 
+        <input type="radio" id="SistNerv-2" name="SistNerv" value="2"> 
+        <label for="SistNerv-2">Lieve</label><br> 
+        <input type="radio" id="SistNerv-3" name="SistNerv" value="3"> 
+        <label for="SistNerv-3">Moderato</label><br> 
+        <input type="radio" id="SistNerv-4" name="SistNerv" value="4"> 
+        <label for="SistNerv-4">Grave</label> <br>
+        <input type="radio" id="SistNerv-5" name="SistNerv" value="5"> 
+        <label for="SistNerv-5">Molto grave</label> 
+        </div> 
+   <div class="question"> 
+        <p>13. Patologie endocrine-metaboliche  (include diabete, infezioni, sepsi, stati tossici)?</p> 
+        <input type="radio" id="Endocr-1" name="Endocr" value="1">
+        <label for="Endocr-1">Assente</label><br> 
+        <input type="radio" id="Endocr-2" name="Endocr" value="2"> 
+        <label for="Endocr-2">Lieve</label><br> 
+        <input type="radio" id="Endocr-3" name="Endocr" value="3"> 
+        <label for="Endocr-3">Moderato</label><br> 
+        <input type="radio" id="Endocr-4" name="Endocr" value="4"> 
+        <label for="Endocr-4">Grave</label> <br>
+        <input type="radio" id="Endocr-5" name="Endocr" value="5"> 
+        <label for="Endocr-5">Molto grave</label> 
+        </div> 
+<div class="question"> 
+        <p>14. Patologie psichiatriche-comportamentali (include demenza, depressione, ansia, agitazione, psicosi) ?</p> 
+        <input type="radio" id="Psic-1" name="Psic" value="1">
+        <label for="Psic-1">Assente</label><br> 
+        <input type="radio" id="Psic-2" name="Psic" value="2"> 
+        <label for="Psic-2">Lieve</label><br> 
+        <input type="radio" id="Psic-3" name="Psic" value="3"> 
+        <label for="Psic-3">Moderato</label><br> 
+        <input type="radio" id="Psic-4" name="Psic" value="4"> 
+        <label for="Psic-4">Grave</label> <br>
+        <input type="radio" id="Psic-5" name="Psic" value="5"> 
+        <label for="Psic-5">Molto grave</label> 
+        </div> 
+		</form>
+  		   <br> <button onclick="loadNewPage()">Avanti</button> 
+        <script> function loadNewPage() { window.location.href = '../index2.html'; 
+        // Replace 'newpage.html' with the path to your new HTML file 
+		} </script>
+  </body>
+  
+  </html>

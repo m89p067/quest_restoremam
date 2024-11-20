@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quest1_PART7</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stile di vita</h1>
+	<h2>Abitudini alimentari</h2>
+	
+	  <form>
+        <div class="question">
+            <p>1. Razioni di frutta al giorno ?</p>
+            <input type="radio" id="Frutta-0" name="Frutta" value="0">
+            <label for="Frutta-0">Mai</label><br>
+            <input type="radio" id="Frutta-1" name="Frutta" value="1">
+            <label for="Frutta-1">1</label><br>
+            <input type="radio" id="Frutta-2" name="Frutta" value="2">
+            <label for="Frutta-2">Più di 2</label><br>            		   
+        </div>
+		<div class="question">
+            <p>2. Razioni di verdura al giorno ?</p>
+            <input type="radio" id="Verdura-0" name="Verdura" value="0">
+            <label for="Verdura-0">0-2</label><br>
+            <input type="radio" id="Verdura-1" name="Verdura" value="1">
+            <label for="Verdura-1">3-4</label><br>
+            <input type="radio" id="Verdura-2" name="Verdura" value="2">
+            <label for="Verdura-2">5 o più</label><br>            		   
+        </div>
+		<div class="question">
+            <p>3. Razioni di carne rossa a settimana ?</p>
+            <input type="radio" id="CarneRossa-0" name="CarneRossa" value="0">
+            <label for="CarneRossa-0">0-2</label><br>
+            <input type="radio" id="CarneRossa-1" name="CarneRossa" value="1">
+            <label for="CarneRossa-1">3-4</label><br>
+            <input type="radio" id="CarneRossa-2" name="CarneRossa" value="2">
+            <label for="CarneRossa-2">5 o più</label><br>            		   
+        </div>
+		<div class="question">
+            <p>4. Razioni di carne processata a settimana ?</p>
+            <input type="radio" id="CarneProcessata-0" name="CarneProcessata" value="0">
+            <label for="CarneProcessata-0">0</label><br>
+            <input type="radio" id="CarneProcessata-1" name="CarneProcessata" value="1">
+            <label for="CarneProcessata-1">1-2</label><br>
+            <input type="radio" id="CarneProcessata-2" name="CarneProcessata" value="2">
+            <label for="CarneProcessata-2">3 o più</label><br>            		   
+        </div>
+		<div class="question">
+            <p>5. Razioni di pesce a settimana ?</p>
+            <input type="radio" id="Pesce-0" name="Pesce" value="0">
+            <label for="Pesce-0">0</label><br>
+            <input type="radio" id="Pesce-1" name="Pesce" value="1">
+            <label for="Pesce-1">1-2</label><br>
+            <input type="radio" id="Pesce-2" name="Pesce" value="2">
+            <label for="Pesce-2">3 o più</label><br>            		   
+        </div>		    
+		</form>
+<br> <button onclick="loadNewPage()">Avanti</button> 
+        <script> function loadNewPage() { window.location.href = './part8.html'; 
+        // Replace 'newpage.html' with the path to your new HTML file 
+		} </script>
+</body>
+</html>

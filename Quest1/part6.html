@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quest1_PART6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stile di vita</h1>
+
+    <form>
+        <div class="question">
+            <p>1. Riesce a trovare il tempo di svolgere attività fisica anche quando è impegnata ?</p>
+            <input type="radio" id="AttFis-0" name="AttFis" value="0">
+            <label for="AttFis-0">Mai</label><br>
+            <input type="radio" id="AttFis-1" name="AttFis" value="1">
+            <label for="AttFis-1">Raramente</label><br>
+            <input type="radio" id="AttFis-2" name="AttFis" value="2">
+            <label for="AttFis-2">Qualche volta</label><br>
+            <input type="radio" id="AttFis-3" name="AttFis" value="3">
+            <label for="AttFis-3">Spesso</label><br>
+			<input type="radio" id="AttFis-4" name="AttFis" value="4">
+            <label for="AttFis-4">Sempre</label><br>
+			   
+        </div>
+
+        <div class="question">
+            <p>2. Svolgere attività aerobica come camminare a passo veloce, correre, danzare per più di 30 minuti consecutivi ?</p>
+            <input type="radio" id="AttAereob-0" name="AttAereob" value="0">
+            <label for="AttAereob-0">Mai</label><br>
+            <input type="radio" id="AttAereob-1" name="AttAereob" value="1">
+            <label for="AttAereob-1">1 volta a settimana</label><br>
+            <input type="radio" id="AttAereob-2" name="AttAereob" value="2">
+            <label for="AttAereob-2">2-3 volte a settimana</label><br>
+            <input type="radio" id="AttAereob-3" name="AttAereob" value="3">
+            <label for="AttAereob-3">Più di 4 volte a settimana</label><br>
+		</div>
+		   <div class="question">
+            <p>3. Svolgere attività aerobica come camminare a passo veloce, correre, danzare per più di 150 minuti a settimana ?</p>
+            <input type="radio" id="AerobLunga-0" name="AerobLunga" value="0">
+            <label for="AerobLunga-0">Mai</label><br>
+            <input type="radio" id="AerobLunga-1" name="AerobLunga" value="1">
+            <label for="AerobLunga-1">Raramente</label><br>
+            <input type="radio" id="AerobLunga-2" name="AerobLunga" value="2">
+            <label for="AerobLunga-2">Qualche volta</label><br>
+            <input type="radio" id="AerobLunga-3" name="AerobLunga" value="3">
+            <label for="AerobLunga-3">Spesso</label><br>
+			<input type="radio" id="AerobLunga-4" name="AerobLunga" value="4">
+            <label for="AerobLunga-4">Sempre</label><br>
+		</div>
+		
+    </form>
+<br> <button onclick="loadNewPage()">Avanti</button> 
+        <script> function loadNewPage() { window.location.href = './part7.html'; 
+        // Replace 'newpage.html' with the path to your new HTML file 
+		} </script>
+</body>
+</html>

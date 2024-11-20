@@ -1,0 +1,89 @@
+<!DOCTYPE html> 
+ <html> <head> 
+    <title>Quest1_PART3</title> 
+    <style>  body { font-family: Arial, sans-serif; margin: 20px; } 
+	.question { margin-bottom: 20px; } 
+	.colored-box { width: 300px; height: 100px; background-color: #4CAF50; /* Green background color */ color: white; /* White text color */ border: 2px solid #000; /* Black border */ padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; display: flex; align-items: center; justify-content: center; }
+	</style>
+     </head>
+  
+  <body>
+  
+      <h1>Principali comorbilità (CIRS)</h1>
+
+     <h2>Seconda parte</h2>
+      <div class="colored-box"> Istruzioni: 1=Assente; 2=Lieve; 3=Moderato; 4=Grave; 5=Molto grave. </div>
+  <form>
+<div class="question"> 
+            <p>5. O.O.N.G.L. (occhio, orecchio, naso, gola, laringe) ?</p> 
+           <input type="radio" id="otorino-1" name="Otorino" value="1">
+        <label for="otorino-1">Assente</label><br> 
+        <input type="radio" id="otorino-2" name="Otorino" value="2"> 
+        <label for="otorino-2">Lieve</label><br> 
+        <input type="radio" id="otorino-3" name="Otorino" value="3"> 
+        <label for="otorino-3">Moderato</label><br> 
+        <input type="radio" id="otorino-4" name="Otorino" value="4"> 
+        <label for="otorino-4">Grave</label> <br>
+        <input type="radio" id="otorino-5" name="Otorino" value="5"> 
+        <label for="otorino-5">Molto grave</label> 
+        </div> 
+<div class="question"> 
+        <p>6. Apparato GastroInt. superiore (esofago, stomaco, duodeno, albero biliare, pancreas)  ?</p> 
+        <input type="radio" id="Gastro-1" name="Gastro" value="1">
+        <label for="Gastro-1">Assente</label><br> 
+        <input type="radio" id="Gastro-2" name="Gastro" value="2"> 
+        <label for="Gastro-2">Lieve</label><br> 
+        <input type="radio" id="Gastro-3" name="Gastro" value="3"> 
+        <label for="Gastro-3">Moderato</label><br> 
+        <input type="radio" id="Gastro-4" name="Gastro" value="4"> 
+        <label for="Gastro-4">Grave</label> <br>
+        <input type="radio" id="Gastro-5" name="Gastro" value="5"> 
+        <label for="Gastro-5">Molto grave</label> 
+        </div> 
+<div class="question"> 
+        <p>7. Apparato GatroInt. inferiore (intestino, ernie) ?</p> 
+        <input type="radio" id="Intestino-1" name="Intestino" value="1">
+        <label for="Intestino-1">Assente</label><br> 
+        <input type="radio" id="Intestino-2" name="Intestino" value="2"> 
+        <label for="Intestino-2">Lieve</label><br> 
+        <input type="radio" id="Intestino-3" name="Intestino" value="3"> 
+        <label for="Intestino-3">Moderato</label><br> 
+        <input type="radio" id="Intestino-4" name="Intestino" value="4"> 
+        <label for="Intestino-4">Grave</label> <br>
+        <input type="radio" id="Intestino-5" name="Intestino" value="5"> 
+        <label for="Intestino-5">Molto grave</label> 
+        </div> 
+<div class="question"> 
+        <p>8. Patologie epatiche (solo fegato)?</p> 
+        <input type="radio" id="Epat-1" name="Epat" value="1">
+        <label for="Epat-1">Assente</label><br> 
+        <input type="radio" id="Epat-2" name="Epat" value="2"> 
+        <label for="Epat-2">Lieve</label><br> 
+        <input type="radio" id="Epat-3" name="Epat" value="3"> 
+        <label for="Epat-3">Moderato</label><br> 
+        <input type="radio" id="Epat-4" name="Epat" value="4"> 
+        <label for="Epat-4">Grave</label> <br>
+        <input type="radio" id="Epat-5" name="Epat" value="5"> 
+        <label for="Epat-5">Molto grave</label> 
+        </div> 
+<div class="question"> 
+        <p>9. Patologie renali (solo rene)?</p> 
+        <input type="radio" id="Renale-1" name="Renale" value="1">
+        <label for="Renale-1">Assente</label><br> 
+        <input type="radio" id="Renale-2" name="Renale" value="2"> 
+        <label for="Renale-2">Lieve</label><br> 
+        <input type="radio" id="Renale-3" name="Renale" value="3"> 
+        <label for="Renale-3">Moderato</label><br> 
+        <input type="radio" id="Renale-4" name="Renale" value="4"> 
+        <label for="Renale-4">Grave</label> <br>
+        <input type="radio" id="Renale-5" name="Renale" value="5"> 
+        <label for="Renale-5">Molto grave</label> 
+        </div> 
+		</form>
+		   <br> <button onclick="loadNewPage()">Avanti</button> 
+        <script> function loadNewPage() { window.location.href = './part4.html'; 
+        // Replace 'newpage.html' with the path to your new HTML file 
+		} </script>
+  </body>
+  
+  </html>

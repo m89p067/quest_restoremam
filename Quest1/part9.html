@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+  <html>
+  
+  <head>
+      <title>Quest1_PART9</title>
+  </head>
+  
+  <body>
+  
+      <h1>Caratteristiche cliniche </h1>
+
+     <h2>Esito valutazioni</h2>
+
+ <div class="slider-container"> 
+    Performance Status secondo Karnofsky:<input type="range" id="KPSSlider" class="slider" min="0" max="100" value="20" 
+    oninput="updateValue1(this.value)">  <span class="value" id="KPS">20</span></div>     
+    <script> function updateValue1(value) { document.getElementById("KPS").innerText = value; }
+     </script>
+<p><b>Localizzazione del tumore:</b></p>
+
+    <div>
+        <input type="radio" 
+               id="TumoreDestro" 
+               name="Zona_tumore" 
+               value="TumoreDestro">
+        <label for="TumoreDestro">Lato destro</label>
+    </div>
+	  <div>
+        <input type="radio" 
+               id="TumoreSinistro" 
+               name="Zona_tumore" 
+               value="TumoreSinistro">
+        <label for="TumoreSinistro">Lato sinistro</label>
+    </div>
+<p><b>stadiazione TNM</b></p>
+
+       <div class="question">
+            <p>T (Tumore)</p>
+            <div class="radio-inline">
+                <input type="radio" id="Tumore-T0" name="TNM_Tumore" value="T0">
+                <label for="Tumore-T0">T0</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Tumore-T1" name="TNM_Tumore" value="T1">
+                <label for="Tumore-T1">T1</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Tumore-T2" name="TNM_Tumore" value="T2">
+                <label for="Tumore-T2">T2</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Tumore-T3" name="TNM_Tumore" value="T3">
+                <label for="Tumore-T3">T3</label>
+            </div>
+			      <div class="radio-inline">
+                <input type="radio" id="Tumore-T4" name="TNM_Tumore" value="T4">
+                <label for="Tumore-T4">T4</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>N (Nodi)</p>
+            <div class="radio-inline">
+                <input type="radio" id="Nodi-N0" name="TNM_Nodi" value="N0">
+                <label for="Nodi-N0">N0</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Nodi-N1" name="TNM_Nodi" value="N1">
+                <label for="Nodi-N1">N1</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Nodi-N2" name="TNM_Nodi" value="N2">
+                <label for="Nodi-N2">N2</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Nodi-N3" name="TNM_Nodi" value="N3">
+                <label for="Nodi-N3">N3</label>
+            </div>
+        </div>
+
+        <div class="question">
+            <p>M (Metastasi)</p>
+            <div class="radio-inline">
+                <input type="radio" id="Metastasi-M0" name="TNM_Metastasi" value="M0">
+                <label for="Metastasi-M0">M0</label>
+            </div>
+            <div class="radio-inline">
+                <input type="radio" id="Metastasi-M1" name="TNM_Metastasi" value="M1">
+                <label for="Metastasi-M1">M1</label>
+            </div>            
+        </div>
+
+<p><b>Trattamento previsto</b></p>
+<div class="question">
+            <p>Opzioni trattamento (possibilità di scelta multipla)</p>
+           <input type="checkbox" id="Chirurgia" name="Trattamento_Tumore" value="Chirurgia"> 
+		   <label for="Chirurgia">Chirurgia</label><br> 
+		   <input type="checkbox" id="Radioterapia" name="Trattamento_Tumore" value="Radioterapia"> 
+		   <label for="Radioterapia">Radioterapia</label><br> 
+		   <input type="checkbox" id="Chemioterapia" name="Trattamento_Tumore" value="Chemioterapia"> 
+		   <label for="Chemioterapia">Chemioterapia</label><br> 		 
+		   <input type="checkbox" id="Terapia_ormonale" name="Trattamento_Tumore" value="Terapia_ormonale"> 
+		   <label for="Terapia_ormonale">Terapia ormonale</label><br> 
+		   <input type="checkbox" id="Immunoterapia" name="Trattamento_Tumore" value="Immunoterapia"> 
+		   <label for="Immunoterapia">Immunoterapia</label><br> 
+		   <input type="checkbox" id="Farmacologica_mirata" name="Trattamento_Tumore" value="Farmacologica_mirata"> 
+		   <label for="Farmacologica_mirata">Farmaci che mirano a specifici cambiamenti genetici o proteici nei tumori</label><br> 
+		   </div>
+<p><b>Soddisfazione rispetto al programma di riabilitazione</b></p>
+<label><input type="radio" name="option" value="1"> Per niente</label> 
+<label><input type="radio" name="option" value="2"> Non molto</label> 
+<label><input type="radio" name="option" value="3"> Moderatamente</label> 
+<label><input type="radio" name="option" value="4"> Completamente</label> 
+   </div>
+<br><br>
+<button onclick="loadNewPage()">Avanti</button> 
+<script> function loadNewPage() { window.location.href = '../index2.html'; 
+// Replace 'newpage.html' with the path to your new HTML file 
+} </script>
+  </body>
+  
+  </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quest1_PART8</title>
+     
+    <style>  body { font-family: Arial, sans-serif; margin: 20px; } 
+	.question { margin-bottom: 20px; }
+.colored-box { width: 300px; height: 100px; background-color: #4CAF50; /* Green background color */ color: white; /* White text color */ border: 2px solid #000; /* Black border */ padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; display: flex; align-items: center; justify-content: center; }
+	</style>
+    
+</head>
+<body>
+    <h1>Stile di vita</h1>
+	<h2>Vizi capitali</h2>
+	<div class="colored-box"> Istruzioni: 1 unità equivale ad un bicchiere di vino 8125 ml a 12°, 1 lattina di birra da 330 ml a 4,5°, un aperitivo da 80 ml a 38°, un bicchierino di superalcolico da 40 ml a 40°. </div>
+	<form>
+        <div class="question">
+            <p>1. Consumo di alcol (in unità alcoliche giornaliere) ?</p>			
+            <input type="radio" id="Alcol-0" name="Alcol" value="0">
+            <label for="Alcol-0">0-1</label><br>
+            <input type="radio" id="Alcol-1" name="Alcol" value="1">
+            <label for="Alcol-1">2</label><br>
+            <input type="radio" id="Alcol-2" name="Alcol" value="2">
+            <label for="Alcol-2">3 ed oltre</label><br>            		   
+        </div>
+		<div class="question">
+            <p>2. Abitudine al fumo ?</p>
+            <input type="radio" id="Fumo-no" name="Fumo" value="no">
+            <label for="Fumo-no">Mai fumato</label><br>
+            <input type="radio" id="Fumo-ex" name="Fumo" value="ex">
+            <label for="Fumo-ex">Ex fumatrice</label><br>
+            <input type="radio" id="Fumo-si" name="Fumo" value="si">
+            <label for="Fumo-si">Fumatrice</label><br>            		   
+        </div>
+			<div class="question">
+            <p>3. Se fuma ancora, quante sigarette al giorno ?</p>
+            <input type="radio" id="Fumo-Poco" name="Fumo" value="Poco">
+            <label for="Fumo-Poco">Meno di 10</label><br>
+            <input type="radio" id="Fumo-Medio" name="Fumo" value="Medio">
+            <label for="Fumo-Medio">Fra 11 e 20 sigarette</label><br>
+            <input type="radio" id="Fumo-Molto" name="Fumo" value="Molto">
+            <label for="Fumo-Molto">21 sigarette ed oltre</label><br>            		   
+        </div>
+				</form>
+<br> <button onclick="loadNewPage()">Avanti</button> 
+        <script> function loadNewPage() { window.location.href = '../index2.html'; 
+        // Replace 'newpage.html' with the path to your new HTML file 
+		} </script>
+</body>
+</html>

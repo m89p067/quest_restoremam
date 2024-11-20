@@ -1,0 +1,82 @@
+
+ <!DOCTYPE html> 
+ <html> <head> 
+    <title>Quest1_PART2</title> 
+    <style>  body { font-family: Arial, sans-serif; margin: 20px; } 
+	.question { margin-bottom: 20px; }
+	.colored-box { width: 300px; height: 100px; background-color: #4CAF50; /* Green background color */ color: white; /* White text color */ border: 2px solid #000; /* Black border */ padding: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); text-align: center; display: flex; align-items: center; justify-content: center; }
+	</style>
+     </head>
+  
+  <body>
+  
+      <h1>Principali comorbilità (CIRS)</h1>
+
+     <h2>Prima parte</h2>
+      <div class="colored-box"> Istruzioni: 1=Assente; 2=Lieve; 3=Moderato; 4=Grave; 5=Molto grave. </div>
+  <form> 
+    <div class="question"> 
+        <p>1. Patologie cardiache (solo cuore) ?</p> 
+        <input type="radio" id="cuore-1" name="pat_cuore" value="1">
+        <label for="coure-1">Assente</label><br> 
+        <input type="radio" id="cuore-2" name="pat_cuore" value="2"> 
+        <label for="cuore-2">Lieve</label><br> 
+        <input type="radio" id="cuore-3" name="pat_cuore" value="3"> 
+        <label for="cuore-3">Moderato</label><br> 
+        <input type="radio" id="cuore-4" name="pat_cuore" value="4"> 
+        <label for="cuore-4">Grave</label> <br>
+        <input type="radio" id="cuore-5" name="pat_cuore" value="5"> 
+        <label for="cuore-5">Molto grave</label> 
+        </div> 
+
+        <div class="question"> 
+            <p>2. Ipertensione ?</p> 
+           <input type="radio" id="ipertensione-1" name="ipertensione" value="1">
+        <label for="ipertensione-1">Assente</label><br> 
+        <input type="radio" id="ipertensione-2" name="ipertensione" value="2"> 
+        <label for="ipertensione-2">Lieve</label><br> 
+        <input type="radio" id="ipertensione-3" name="ipertensione" value="3"> 
+        <label for="ipertensione-3">Moderato</label><br> 
+        <input type="radio" id="ipertensione-4" name="ipertensione" value="4"> 
+        <label for="ipertensione-4">Grave</label> <br>
+        <input type="radio" id="ipertensione-5" name="ipertensione" value="5"> 
+        <label for="ipertensione-5">Molto grave</label> 
+        </div> 
+
+ <div class="question"> 
+            <p>3. Patologie vascolari (sangue, vasi, midollo, milza, sistema linfatico) ?</p> 
+           <input type="radio" id="vasc-1" name="Patologie_vascolari" value="1">
+        <label for="vasc-1">Assente</label><br> 
+        <input type="radio" id="vasc-2" name="Patologie_vascolari" value="2"> 
+        <label for="vasc-2">Lieve</label><br> 
+        <input type="radio" id="vasc-3" name="Patologie_vascolari" value="3"> 
+        <label for="vasc-3">Moderato</label><br> 
+        <input type="radio" id="vasc-4" name="Patologie_vascolari" value="4"> 
+        <label for="vasc-4">Grave</label> <br>
+        <input type="radio" id="vasc-5" name="Patologie_vascolari" value="5"> 
+        <label for="vasc-5">Molto grave</label> 
+        </div> 
+
+<div class="question"> 
+            <p>4. Patologie respiratorie (polmoni, bronchi, trachea sotto la laringe) ?</p> 
+           <input type="radio" id="respiratorie-1" name="Patologie_respiratorie" value="1">
+        <label for="respiratorie-1">Assente</label><br> 
+        <input type="radio" id="respiratorie-2" name="Patologie_respiratorie" value="2"> 
+        <label for="respiratorie-2">Lieve</label><br> 
+        <input type="radio" id="respiratorie-3" name="Patologie_respiratorie" value="3"> 
+        <label for="respiratorie-3">Moderato</label><br> 
+        <input type="radio" id="respiratorie-4" name="Patologie_respiratorie" value="4"> 
+        <label for="respiratorie-4">Grave</label> <br>
+        <input type="radio" id="respiratorie-5" name="Patologie_respiratorie" value="5"> 
+        <label for="respiratorie-5">Molto grave</label> 
+        </div> 
+</form>
+
+       <br> <button onclick="loadNewPage()">Avanti</button> 
+        <script> function loadNewPage() { window.location.href = './part3.html'; 
+        // Replace 'newpage.html' with the path to your new HTML file 
+		} </script>
+  </body>
+  
+  </html>
+  

@@ -1,0 +1,135 @@
+
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+      <title>Quest1_PART1</title>
+  </head>
+  
+  <body>
+  
+      <h1>Questionario dati clinici e demografici</h1>
+
+     <h2>Dati antropometrici</h2>
+
+ <div class="slider-container"> 
+    Altezza (in cm):<input type="range" id="AltezzaSlider" class="slider" min="110" max="220" value="110" 
+    oninput="updateValue1(this.value)">  <span class="value" id="Altezza">110</span> cm</div>     
+    <script> function updateValue1(value) { document.getElementById("Altezza").innerText = value; }
+     </script>
+   <div class="slider-container">   Peso (in Kg):<input type="range" id="PesoSlider" class="slider" min="40" max="220" value="50" 
+    oninput="updateValue2(this.value)"> <span class="value" id="Peso">50 </span> Kg</div>     
+    <script> function updateValue2(value) { document.getElementById("Peso").innerText = value; }
+     </script>
+     <div class="slider-container">   Circonferenza arto destro, in cm:<input type="range" id="BraccioDxSlider" class="slider" min="10" max="250" value="50" 
+    oninput="updateValue3(this.value)"> <span class="value" id="CircBraDx">50 </span> cm</div>     
+    <script> function updateValue3(value) { document.getElementById("CircBraDx").innerText = value; }
+     </script>
+      <div class="slider-container">   Circonferenza arto sinistro, in cm:<input type="range" id="BraccioSinSlider" class="slider" min="10" max="250" value="50" 
+    oninput="updateValue4(this.value)"> <span class="value" id="CircBraSin">50 </span> cm</div>     
+    <script> function updateValue4(value) { document.getElementById("CircBraSin").innerText = value; }
+     </script>
+     <h2>Informazioni individuali</h2>
+	 <input type="text" id="Nome" placeholder="Nome" required>
+	 <input type="text" id="Cognome" placeholder="Cognome" required>
+<p>Sesso alla nascita:</p>
+
+    <div>
+        <input type="radio" 
+               id="Uomo" 
+               name="sesso_alla_nascita" 
+               value="Uomo">
+        <label for="Uomo">Uomo</label>
+    </div>
+
+    <div>
+        <input type="radio" 
+               id="Donna" 
+               name="sesso_alla_nascita" 
+               value="Donna">
+        <label for="Donna">Donna</label>
+    </div>
+
+   
+<br/><br/>
+       <label for="data_nascita">Data di nascita:</label>
+        <input type="date" id="data_nascita" name="data_nascita"> 
+  <br/><br/>
+     <label for="titolo_studio">Titolo di studio:</label>
+        <select name="titolo_studio" id="titolo_studio">
+        <option value="">--Selezionare livello di istruzione--</option>
+        <option value="Elementare">Elementare</option>
+        <option value="Medie">Medie</option>
+        <option value="Superiore">Superiore</option>
+        <option value="Laurea">Laurea</option>
+</select>
+<br/><br/>
+<label for="status_economico">Status economico:</label>
+        <select name="status_economico" id="status_economico">
+        <option value="">--Selezionare livello economico--</option>
+        <option value="Insuff">Non sufficiente per vivere</option>
+        <option value="Suff">Sufficiente per vivere</option>
+        <option value="Ottimo">Più che sufficiente per vivere</option>       
+</select>
+<br/><br/>
+<label for="Occupazione">Occupazione:</label>
+        <select name="Occupazione" id="Occupazione">
+        <option value="">--Selezionare occupazione--</option>
+        <option value="Pensionato">In pensione</option>
+        <option value="Parziale">Lavoro part time</option>
+        <option value="Pieno">Impiego a tempo pieno</option>       
+</select>
+<br/><br/>
+  <p>Quante ore a settimana utilizzi uno o più di uno dei seguenti dispositivi (computer, tablet, smartphone)?</p>
+
+    <div>
+        <input type="radio" 
+               id="Zero" 
+               name="computer" 
+               value="Zero">
+        <label for="Zero">Meno di un’ora a settimana</label>
+    </div>
+
+    <div>
+        <input type="radio" 
+               id="Scarso" 
+               name="computer" 
+               value="Scarso">
+        <label for="Scarso">Da 1 a 5 ore ogni settimana</label>
+    </div>
+
+    <div>
+        <input type="radio" 
+               id="Medio" 
+               name="computer" 
+               value="Medio" >
+        <label for="Medio">Da 5 a 10 ore ogni settimana</label>
+    </div>
+
+     <div>
+        <input type="radio" 
+               id="Pro" 
+               name="computer" 
+               value="Pro" >
+        <label for="Pro">Da 10 a 15 ogni settimana</label>
+    </div>
+
+     <div>
+        <input type="radio" 
+               id="Nerd" 
+               name="computer" 
+               value="Nerd" >
+        <label for="Nerd">Più di 15 ore ogni settimana</label>
+    </div>
+<br>
+<button onclick="loadNewPage()">Avanti</button> 
+<script> function loadNewPage() 
+{ window.location.href = '../index2.html'; 
+// The "./" indicates the same local folder 
+} 
+</script>
+
+  </body>
+  
+  </html>
+  
